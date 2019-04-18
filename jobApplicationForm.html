@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)http://winhost6.ischool.uw.edu/gclass/files/activities/build_w3/forms.html -->
+
+<style>
+body {
+	background-color: cyan;
+	font-family: 'Courier New', Courier, monospace;
+}
+fieldset {
+	text-align: center;
+}
+h2 {
+	color:blue;
+	font-size: 30px;
+	text-align: center;
+}
+input[type="submit"] {
+  width: 150px;
+  display: block;
+  margin-bottom: 10px;
+  background-color: yellow;
+  text-align: center;
+}
+</style>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+<title>Make my Profile!</title>
+</head>
+<body>
+
+<h2>Make my Profile!</h2>
+
+<form name = "input" action="html_form_action.asp" method="post">
+
+	<fieldset>
+		<legend>User Profile</legend>
+		<div class="field">
+			<label>Email:</label> 
+			<input type="text" name="email">
+		</div>
+		<div class="field">
+			<label>Password:</label> 
+			<input type="password" name="password">
+		</div>
+		<div class="field">
+			<label>Repeat password:</label> 
+			<input type="password" name="password_r">
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Personal Information</legend>
+		<div class="field">
+			First name: <input type="text" name="firstname"><br> Last name: <input type="text" name="lastname">
+		</div>
+		<div class="field">
+			Address: <input type="text" name="address"><br>
+		</div>
+		<div class="field">
+			City: <input type="text" name="city"><br>
+		</div>
+		<div class="field">
+			<label>School: </label> 
+			<select name="schools">
+				<option value="ucb">uc berkeley</option>
+				<option value="uw">uw seattle</option>
+				<option value="ucla">uc los angeles</option>
+				<option value="ubc">university of british columbia</option>
+			</select>
+
+		</div>
+		<div class="field">
+			<label>zip code:</label> 
+			<input type="text" name="zip">
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Citizenship and Avaliability</legend>
+		<div class="field">
+			<label>Are you a US citizen?</label> 
+			<input type="radio" name="answer" value="yes">Yes<br>
+			<input type="radio" name="answer" value="no">No<br>
+		</div>
+		<div class="field">
+			<label>What time avaliability do you have for your classes?</label>
+			<ul>
+				<input type="checkbox" name="position_pt" value="morning">morning
+				<input type="checkbox" name="position_ft" value="afternoon">afternoon
+				<input type="checkbox" name="position_sl" value="evening">evening
+			</ul>
+		</div>
+		<div class="field">
+			<label>Hours available</label>
+			<table>
+				<tbody><tr>
+					<td></td>
+					<th>Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+				</tr>
+				<tr>
+					<th>From</th>
+					<td><input type="time" size="5" name="su_from"></td>
+					<td><input type="time" size="5" name="mo_from"></td>
+					<td><input type="time" size="5" name="tu_from"></td>
+					<td><input type="time" size="5" name="we_from"></td>
+					<td><input type="time" size="5" name="th_from"></td>
+					<td><input type="time" size="5" name="fr_from"></td>
+					<td><input type="time" size="5" name="sa_from"></td>
+				</tr>
+				<tr>
+					<th>Until</th>
+					<td><input type="time" size="5" name="su_until"></td>
+					<td><input type="time" size="5" name="mo_until"></td>
+					<td><input type="time" size="5" name="tu_until"></td>
+					<td><input type="time" size="5" name="we_until"></td>
+					<td><input type="time" size="5" name="th_until"></td>
+					<td><input type="time" size="5" name="fr_until"></td>
+					<td><input type="time" size="5" name="sa_until"></td>
+				</tr>
+			</tbody></table>
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Personal Statement</legend>
+		<div class="field">
+			<label>What is your preferred major and why?</label><br>
+			<textarea name="deserve" rows="10" cols="60"></textarea>
+		</div>
+		<div class="field">
+			<label>What is your biggest challenge? Give an example.</label><br>
+			<textarea name="project" rows="10" cols="60"></textarea>
+		</div>
+	</fieldset>
+
+	<input type="submit" value="Submit form">
+
+</form>
+
+</body></html>
